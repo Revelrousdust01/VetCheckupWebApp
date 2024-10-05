@@ -1,6 +1,5 @@
 ﻿using Azure.Identity;
 using VetCheckup.Application.Common.Interfaces;
-using VetCheckup.Infrastructure.Data;
 using VetCheckup.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,8 +16,8 @@ public static class DependencyInjection
 
         services.AddHttpContextAccessor();
 
-        services.AddHealthChecks()
-            .AddDbContextCheck<ApplicationDbContext>();
+        //services.AddHealthChecks()
+        //    .AddDbContextCheck<ApplicationDbContext>();
 
         services.AddExceptionHandler<CustomExceptionHandler>();
 
