@@ -25,6 +25,8 @@
         <PackageReference Include="nunit" />
         <PackageReference Include="NUnit3TestAdapter" />
         <PackageReference Include="FluentAssertions" />
+        <PackageReference Include="VetCheckup.Application" />
+        <PackageReference Include="VetCheckup.Infrastructure" />
     </ItemGroup>
 
 </Project>

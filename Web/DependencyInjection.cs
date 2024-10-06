@@ -3,6 +3,7 @@ using VetCheckup.Application.Common.Interfaces;
 using VetCheckup.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using VetCheckup.Infrastructure.Data;
 
 
 namespace Microsoft.Extensions.DependencyInjection;
@@ -17,8 +18,8 @@ public static class DependencyInjection
 
         services.AddHttpContextAccessor();
 
-        //services.AddHealthChecks()
-        //    .AddDbContextCheck<ApplicationDbContext>();
+        services.AddHealthChecks()
+            .AddDbContextCheck<ApplicationDbContext>();
 
         services.AddExceptionHandler<CustomExceptionHandler>();
 

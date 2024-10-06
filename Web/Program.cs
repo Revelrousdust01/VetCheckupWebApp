@@ -13,7 +13,7 @@ builder.Services.AddWebServices();
 
 var app = builder.Build();
 
-app.UseHealthChecks("/health");
+//app.UseHealthChecks("/health");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
