@@ -3,6 +3,7 @@ using VetCheckup.Application.Common.Interfaces;
 using VetCheckup.Infrastructure.Data;
 using VetCheckup.Web.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Microsoft.Extensions.DependencyInjection;
