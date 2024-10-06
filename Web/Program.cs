@@ -1,4 +1,3 @@
-using VetCheckup.Infrastructure.Data;
 
 using VetCheckup.Application;
 using VetCheckup.Infrastructure;
